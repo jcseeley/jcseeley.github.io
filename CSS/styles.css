@@ -1,64 +1,254 @@
-.header {
-  text-align: center;
-  margin-top: 2%;
+@font-face {
+  font-family: BTTF;
+  src: url(BTTF.ttf);
 }
 
 body {
-  background-color: black;
-  font-style: oblique;
-  color: red;
-  font-weight: 500;
+  color: aqua;
+  font-family: BTTF;
+  font-size: small;
+  cursor: url("./../img/40pxErasedFaceCursor.png") 15 15, pointer;
 }
 
-#projects {
+video {
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#parallax {
+  max-width: 80%;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  /* animation: animate .75s infinite; */
+}
+
+@keyframes animate{
+  0%{ 
+    cursor: url("./../img/40pxCursor.png"), auto;
+  }
+  12.5%{ 
+    cursor: url("./../img/40pxCursor45.png"), auto;
+  }
+  25%{ 
+    cursor: url("./../img/40pxCursor90.png"), auto;
+  }
+  37.5%{ 
+    cursor: url("./../img/40pxCursor135.png"), auto;
+  }
+  50%{ 
+    cursor: url("./../img/40pxCursor180.png"), auto;
+  }
+  62.5%{ 
+    cursor: url("./../img/40pxCursor225.png"), auto;
+  }
+  75%{ 
+    cursor: url("./../img/40pxCursor270.png"), auto;
+  }
+  87.5%{ 
+    cursor: url("./../img/40pxCursor315.png"), auto;
+  }
+  100%{ 
+    cursor: url("./../img/40pxCursor.png"), auto;
+  }
+}
+
+#header {  
+  display: flex;
+  height: 200px;
+  width: 100%;
+}
+
+#name {
+  align-self: center;
+  display: block;
+  margin-top: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+#name:hover {
+  animation-name: zoomSpin;
+  animation-timing-function: ease;
+  /* cursor: url("./../img/BTTFClickHere.png") 15 15, pointer; */
+}
+
+@keyframes zoomSpin {
+  0%   { transform: scale(1); }
+  25%  { transform: scale(1.1) rotate(5deg); }
+  50%  { transform: scale(1); }
+  75%  { transform: scale(1.2) rotate(5); }
+  100% { transform: scale(1) rotate(360deg); }
+}
+
+#content {
+  /* display: none; */
   text-align: center;
-  text-decoration: underline;
 }
 
-.col-12 {
-  font-size: large;
-  text-align: left;
-  padding: 1%;
-  border-style: solid;
+#about {
   margin-top: 5%;
-  margin-bottom: 3%;
+  max-width: 750px;
+}
+
+#am, #bg, #hobbies {
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+#am:hover, #bg:hover, #hobbies:hover {
+  animation-name: tiltRight;
+  animation-timing-function: ease;
+}
+
+@keyframes tiltRight {
+  0%   { transform: scale(1.1) rotate(5deg); }
+  50%  { transform: scale(1.1) rotate(5deg); }
+  100% { transform: scale(1.1) rotate(5deg); }
+}
+
+#projects, #wc {
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+#projects:hover, #wc:hover {
+  animation-name: tiltLeft;
+  animation-timing-function: ease;
+}
+
+@keyframes tiltLeft {
+  0%   { transform: scale(1.1) rotate(-5deg); }
+  50%  { transform: scale(1.1) rotate(-5deg); }
+  100% { transform: scale(1.1) rotate(-5deg); }
 }
 
 #me {
-  max-width: 33%;
-  max-height: 400px;
-  margin-top: 5%;
   margin-left: 10%;
-  margin-right: 5%;
-  padding: 2px;
-  border-style: solid;
-  float: left;
+  max-height: 100%;
+  border-radius: 50%;
+  display: none;
 }
 
-.about {
-  text-align: left;
-  font-size: large;
+#amb {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 3%;
+  margin-top: 15%;
+  color: orange;
+  border-radius: 25px;
+  border: 2px solid aqua;
+  display: none;
+}
+
+#bg, #wc {
+  margin-top: 3%;
+}
+
+#bgb, #wcb {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 2%;
+  margin-top: 1%;
+  color: orange;
+  border-radius: 25px;
+  border: 2px solid aqua;
+  display: none;
+}
+
+#projects {
+  margin-top: 3%;
+}
+
+.project {
+  object-fit: cover;
+  object-position: 50% 50%;
+  margin-bottom: 2%;
+  max-height: 225px;
+  /* -webkit-filter: brightness(75%);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease; */
+}
+
+.project:hover {
+  /* -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: .5s;
+  -webkit-filter: brightness(100%);
+  cursor: url("./../img/BTTFClickHere.png") 15 15, pointer; */
+}
+.projectCard {
+  min-height: 422px;
+}
+
+#projectsBody {
+  text-align: center;
+  display: none;
+}
+#jsProjects, #cprojects {
   margin-top: 5%;
-  margin-bottom: 5%;
+}
+.tech {
+  color: fuchsia;
 }
 
-.highlights {
-  color: black;
-  background-color: red;
+h1 {
+  display: inline-block;
+  margin: auto;
+  text-align: center;
+  text-decoration: underline;
+  font-family: BTTF;
 }
 
 h2 {
   text-align: center;
   text-decoration: underline;
+  font-family: BTTF;
 }
 
-.hobbies {
-  margin-bottom: 5%;
+#hobbies {
+  margin-bottom: 1%;
+  margin-top: 3%;
 }
 
-.col-4 {
-  text-align: left;
-  font-size: medium;
+#hobbyContent {
+  text-align: center;
+  display: none;
+}
+
+#film, #game {
+  margin-top: 5%;
+}
+
+.hobbyCard {
+  min-height: 255px;
+}
+
+.card {
+  background: rgba(0, 0, 0, 0.7);
+  padding-top: 2%;
+  padding-left: 2%;
+  padding-right: 2%;
+  margin-top: 3%;
+  margin-bottom: 2%;
+  color: orange;
+  border-radius: 25px;
+  border-radius: 25px;
+  border: 2px solid aqua;
+}
+
+.img-fluid {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 h3 {
@@ -68,5 +258,19 @@ h3 {
 
 h4 {
   text-decoration: underline;
-  text-align: left;
+  text-align: center;
+}
+
+a {
+  font-size: x-large;
+  color: aquamarine;
+}
+
+a:hover {
+  color: chartreuse;
+  cursor: url("./../img/40pxCursor.png") 15 15, pointer;
+}
+
+#cyber {
+  margin-top: 3%;
 }

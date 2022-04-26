@@ -4,77 +4,181 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
   <link href="CSS/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="CSS/styles.css" rel="stylesheet" type="text/css">
+  <script src='js/jquery-3.6.0.js'></script>
+  <script src='js/scripts.js'></script>
   <title>Jase Seeley's Portfolio</title>
 </head>
 <body>
-  <h1 class="header"><strong>Jase Seeley</strong></h1>
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <h2 id="projects">Projects</h2>
-        <ul>
-          <li><a link href="https://github.com/jcseeley/resort-website"><em>Resort</em></a></li>
-          <p>A webpage for the world's hottest new resort destination! (HTML/CSS)</p>
-          <li><a link href="https://github.com/jcseeley/animal-shelter"><em>Animal Shelter</em></a></li>
-          <p>An adoption page created to help find new homes for our unique friends. (HTML/CSS)</p>
-          <li><a link href="https://github.com/jcseeley/my-first-webpage"><em>Favorite People</em></a></li>
-          <p>A page dedicated to some wonderful people. (HTML/CSS)</p>
-          <li><a link href="https://github.com/jcseeley/cupcake-shop"><em>Cupcake Shop</em></a></li>
-          <p>The "flavors" section of Portland's best cupcake joint. (HTML/CSS)</p>
-          <li><a link href="https://github.com/jcseeley/band-website"><em>Michael Jackson</em></a></li>
-          <p>Tour dates for the king of pop! (HTML/CSS)</p>
-        </ul>
+  <video playsinline autoplay muted loop poster="video">
+    <source src="img/Tunnel - 26475.mp4" type="video/mp4">
+  </video>
+  <div id="parallax" class="container">
+    <div class="header">
+      <img id="name" src="https://fontmeme.com/permalink/220419/c7bc90064a2252a80ad4f28853a34537.png" alt="back-to-the-future-font">
+    </div>
+
+    <div id="content">
+      <div id="about" class="container">
+        <h1 id="am">about me</h1>
+        <div class="row">
+
+          <div class="col-6">
+            <img id= "me" class="img-fluid" src="img/blazersNoBackground.png" alt="A photo of Jase and his partner, Katie.">
+          </div>
+
+          <div class="col-6">
+            <p id="amb">hey, i'm jase, an aspiring software engineer currently attending epicodus coding bootcamp. i live in the woodstock neighborhood of portland, or with my lovely partner, katie. i'm an avid nba and formula 1 fan, movie buff, gamer, and beer geek. as a nature lover, i do my best to reduce my carbon footprint by adhering to a minimalistic, plant-based lifestyle.</p>
+          </div>
+        </div>
       </div>
+
+      <h1 id="projects">PROJECTS</h1><br>
+      <div id="projectsBody" class="container">
+        <div class="row">
+          <div class="col-6">
+            <h2 id="jsProjects">javascript</h2>
+            <div class="jsp">
+
+              <div class="projectCard card">
+                <h3 class="jsp"><a link href="https://jcseeley.github.io/React-Tap-Room/"><em>tap room</em></h3></a>
+                <img class="project img-fluid" src="img/Tap-Room.png" alt="screenshot of tap room React app">
+                <p>react app to manage tap room inventory</p>
+                <p class="tech">tech used: javascript, react, create-react-app, npm, webpack, html and tailwind css</p>
+                <a link href="https://github.com/jcseeley/React-Tap-Room">github</a>
+              </div>
+
+              
+              <div class="projectCard card">
+                <h3 class="jsp"><a link href="https://www.bananakingz.net/"><em>banana kingz</em></a></h3>
+                <img class="project img-fluid" src="img/BananaKingz.png" alt="screenshot of bananakingz.net app">
+                <p>web app featuring banana related games, jokes, quotes and more.</p>
+                <p class="tech">tech used: javascript, jquery, npm, webpack, P5, html, css and yacck</p>
+                <a link href="https://github.com/jcseeley/bananakingz.net">github</a>
+              </div>
+
+              <div class="projectCard card">
+                <h3 class="jsp"><a link href="https://jcseeley.github.io/galactic-age-calculator/"><em>galactic age calculator</em></a></h3>
+                <img class="project img-fluid" src="img/GalacticAge.png" alt="screenshot of Galactic Age Calculator app">
+                <p>fully jest tested calculator to determine your age and potential remaining years on other planets</p>
+                <p class="tech">tech used: javascript, jquery, jest, npm, webpack, html, css and bootstrap</p>
+                <a link href="https://github.com/jcseeley/galactic-age-calculator">github</a>
+              </div>
+
+              <div class="projectCard card">
+                <h3 class="jsp"><a link href="https://github.com/jcseeley/currency-exchanger"><em>currency exchanger</em></a></h3>
+                <img class="project img-fluid" src="img/currencyExchanger.png" alt="screenshot of Currency Exchanger app">
+                <p>currency exchange app utilizing an api to convert usd into 161 different currencies</p>
+                <p class="tech">tech used: javascript, jquery, webpack, html, css and bootstrap</p>
+              </div>
+            
+            </div>
+          </div>
+
+          <div class="col-6">
+            <h2 id="cprojects">C#</h2>
+            <div class="projectCard card">
+              <h3 class="cp"><a link href="https://github.com/jcseeley/Pierres.Solution"><em>pierre's bakery</em></a></h3>
+              <img class="project img-fluid" src="img/pierre.png" alt="screenshot of Pierre's Bakery">
+              <p>mvc app utilizing a sql database and user authentication to create many-to-many relationships between pastries and flavors</p>
+              <p class="tech">tech used: C#, . net core, entity, identity, sql, razor, cshtml, css and bootstrap</p>
+            </div>
+            
+            <div class="projectCard card">
+              <h3 class="cp"><a link href="https://github.com/jcseeley/React.Solution"><em>learn to react</em></a></h3>
+              <img class="project img-fluid" src="img/LearnToreact.png" alt="screenshot of Learn to React">
+              <p>mvc app built to complement the epicodus react curriculum. utilizes user authentication and a sql database full of module specific boolean values to track user progress throughout the lessons</p>
+              <p class="tech">tech used: C#, . net core, javascript, entity, identity, sql, razor, cshtml, css and bootstrap</p>
+            </div>
+
+            <div class="projectCard card">
+              <h3 class="cp"><a link href="https://github.com/jcseeley/AnimalShelter.Solution"><em>animal shelter api</em></a></h3>
+              <img class="project img-fluid" src="img/AnimalShelter.png" alt="screenshot of Animal Shelter API swagger documentation">
+              <p>api utilizing restful routing, swagger documentation and pagination</p>
+              <p class="tech">tech used: C#, . net core, entity, sql, openapi, swagger and swashbuckle</p>
+            </div>
+
+            <div class="projectCard card">
+              <h3 class="cp"><a link href="https://github.com/jcseeley/VendorOrderTracker.Solution"><em>vendor order tracker</em></a></h3>
+              <img class="project img-fluid" src="img/Vendor.png" alt="screenshot MSTest code">
+              <p>a prequel to pierre's bakery focused on model testing with mstest</p>
+              <p class="tech">tech used: C#, . net core, mstest, razor, cshtml, css and bootstrap</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <h1 id="bg">background</h1><br>
+      <p id="bgb">i was born and raised in concord, nh. while there, i spent 8 years working for the grappone automotive group. starting in the detail center, i quickly worked my way up to become a key member of the used inventory team. i attended manchester community college's automotive technology program for 3 semesters before realizing i preferred it more as a hobby than as a career. after tiring of the auto industry and my home state, i knew it was time for a change. at the beginning of 2019, i packed my car and headed for the west coast. upon landing in oregon, i pursued a job in the bustling portland beer industry. i quickly found work as a draft technician at northwest draft. during my time there, i attended the micro-matic dispense institute in ca where i learned how to install a variety of different draft systems. after being laid off due to the ongoing covid-19 pandemic, i took advantage of the gig work wave before making the decision to enroll at epicodus.</p>
+
+      <h1 id="wc">WHY CODING?</h1><br>
+      <p id="wcb">having grown up in the late 90's, my home computer was constantly riddled with issues. sometimes it felt like i spent more time trying to access the internet than surfing it. that said, puzzles and problem solving have always been a source of satisfaction for me, so it wasn't long before i actually started to enjoy chasing down fixes. as for coding, my limited intro was styling my myspace page and modifying the downloadable maps for halo 2. i removed invisible barriers, altered spawn points, gave myself superjump capabilities, absurd auto aim, and unlimited ammunition. it was fun but i never really considered it as a career. in 2006, my working life began and i fell into the auto industry for 10 years. while i enjoyed some aspects of dealership life, i knew i wasn't long for it. once i got out, i moved to portland to pursue another passion of mine, beer. after a year in the industry, covid-19 took over and i was laid off. while sitting at home on unemployment, coding began crossing my mind a lot. my initial research had me thinking i needed a cs degree and that it wasn't really an option. regardless, i had firmly decided that i wasn't returning to the beer biz. when i got the call, i declined. then, while riding the gig work wave, i began to see a lot of ads for coding bootcamps popping up. after some extensive research, i decided to go for it and enrolled at epicodus at the beginning of 2022. so far, i love it. the potential to build applications that could improve people's lives is what keeps me banging away on my keyboard every day.</p>
+
+      <h1 id="hobbies">hobbies</h1>
+      <div id="hobbyContent" class="container">
+        <div class="row">
+          <div class="col-6">
+            <h2 id="nba">nba</h2>
+            <div class="nbaContent">
+              <img class="img-fluid" src="img/dameNoBackground.png" alt="Damian Lillard.">
+              <div class="hobbyCard card">
+                <p>i love the fast paced play and indiviuality of basketball. it seems like every player brings something unique to the court. while the trailblazers are my team, i'll watch anyone play as long as it's a competitive game.</p>
+                <h5>favorite players</h5>
+                <p>damian lillard<br>
+                ja morant<br>
+                anthony edwards</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6">
+            <h2 id="f1">FORMULA1</h2>
+            <div class="f1Content">
+              <img class="img-fluid" src="img/landoNoBackground.png" alt="McLaren F1 car.">
+              <div class="hobbyCard card">
+                <p>easily the nerdiest sport there is. it takes a long time to understand all the intricacies of f1, but watching drivers race bumper to bumper at speeds over 200 mph is something everyone can enjoy.</p> 
+                <h5>favorite drivers</h5>
+                <p>lando norris<br>
+                daniel ricciardo<br>
+                fernando alonso</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6">
+            <h2 id="film">film</h2>
+            <div class="filmContent">
+              <img class="img-fluid" src="img/lebowskiNoBackground.png" alt="The Dude, Walter, and Donny in the Big Lebowski.">
+              <div class="hobbyCard card">
+                <p>my love for cinema began when i got my first job at a movie theater in 2006. my friends and i got to see every new film for free. that's a huge deal when you're a broke a high school kid. and while movies at home are fine, there will always be something special about the theater for me.</p>
+                <h5>favorite directors</h5>
+                <p>quentin tarantino<br>
+                christopher nolan<br>
+                martin scorsese</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6">
+            <h2 id="game">GAMES</h2>
+            <div class="gameContent">
+              <img id="cyber" class="img-fluid" src="img/cyberNoBackground.png" alt="Cyberpunk 2077 logo.">
+              <div class="hobbyCard card">
+                <p>my partner and i love couch co-op. we've played pretty much everything we can find together. when i do have time to play solo, i prefer open world adventures. i'm a sucker for side quests.</p>
+                <h5>currently playing</h5>
+                <p>cyberpunk 2077<br>
+                tiny tina's wonderlands</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  
     </div>
   </div>
-  <img id= "me" class="img-fluid" src="img/blazers.jpeg" alt="A photo of Jase and his girlfriend, Katie.">
-  <div class="container">
-    <div class="about">
-      <h2>About Me</h2>
-      <p>Jase Seeley is an <span class="highlights">aspiring software developer</span> currently attending <span class="highlights">Epicodus</span> coding bootcamp. He resides in the Woodstock neighborhood of Portland, OR with his girlfriend, Katie. Jase has been an advocate for a plant-based lifestyle since beginning his own <span class="highlights">vegan</span> journey in 2017. He is an avid <span class="highlights">NBA</span> and <span class="highlights">Formula1</span> fan, <span class="highlights">movie buff</span>, gamer, and <span class="highlights">craft beer enthusiast</span>.
-      <h2>Background</h2>
-      <p>Jase was born and raised in Concord, NH. While there, he spent 8 years working for the Grappone Automotive Group. Starting in the detail center, he quickly worked his way up to become a key member of the used inventory team. He attended Manchester Community College's Automotive Technology program. After tiring of the auto industry and his home state, he knew it was time for a change. At the beginning of 2019, he packed his car and headed for the west coast. Upon landing in Oregon, Jase pursued a job in the bustling Portland beer industry. He quickly found work as a draft technician at Northwest Draft. During his time there, he attended the Micro-Matic dispense institute in CA where he learned how to install a variety of different draft systems. After being laid off due to the ongoing COVID-19 pandemic, Jase relied on gig work to get by until making the decision to enroll at Epicodus.       
-    </div>
-  </div>
-  <div class="container">
-    <h2 class="hobbies">Hobbies & Interests</h2>
-    <div class="row">
-      <div class="col-4">
-        <h3>NBA</h3>
-        <img class="img-fluid" src="img/dame.gif" alt="Damian Lillard draining a 3 point shot.">
-        <p>I got into basketball when the Blazers made it to the Western conference finals in 2019. Portland's love for the Trail Blazers is contagious. I couldn't resist jumping on the bandwagon.</p>
-        <h4>Favorite Players</h4>
-        <ol>
-          <li>Damian Lillard</li>
-          <li>Ja Morant</li>
-          <li>Shai Gilgeous-Alexander</li>
-        </ol>
-      </div>
-      <div class="col-4">
-        <h3>Formula1</h3>
-        <img class="img-fluid" src="img/danny.gif" alt="F1 car driving around a track.">
-        <p>My appreciation for Formula1 was launched by the "Drive to Survive" series on Netflix. The drivers race at speeds over 200 mph and are often seperated by fractions of a second. It's truly fascinating to watch. 
-        <h4>Favorite Drivers</h4>
-        <ol>
-          <li>Lando Norris</li>
-          <li>Daniel Ricciardo</li>
-          <li>Sebastian Vettel</li>
-        </ol>
-      </div>
-      <div class="col-4">
-        <h3>Film</h3>
-        <img class="img-fluid" src="img/leo.gif" alt="Leonardo DiCaprio in 'Django Unchained.">
-        <p>My love for cinema began when I got my first job at a movie theater in 2006. I was able to see every new release for free. Shortly after, I took a film study course in school and really grew to admire the intricacies of film.
-        <h4>Favorite Directors</h4>
-        <ol>
-          <li>Quentin Tarantino</li>
-          <li>Christopher Nolan</li>
-          <li>Paul Thomas Anderson</li>
-        </ol>
-      </div>
-    </div>  
-  </div>  
 </body>
 </html>

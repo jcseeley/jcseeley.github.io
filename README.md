@@ -2,13 +2,15 @@
 
 #### By Jase Seeley
 
-#### About Me page with a collection of projects 
+#### About Me page with a collection of projects. 
 
 ## Technologies Used
 
 * HTML
 * CSS
 * Bootstrap
+* JavaScript
+* jQuery
 
 ## Description
 
