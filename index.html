@@ -27,15 +27,17 @@
         <h1 id="am">about me</h1>
         <div class="row">
 
-          <div class="col-6">
+          <!-- <div class="col-6">
             <img id= "me" class="img-fluid" src="img/blazersNoBackground.png" alt="A photo of Jase and his partner, Katie.">
-          </div>
+          </div> -->
 
-          <div class="col-6">
-            <p id="amb">hey, i'm jase, an aspiring software engineer currently attending epicodus coding bootcamp. i live in the woodstock neighborhood of portland, or with my lovely partner, katie. i'm an avid nba and formula 1 fan, movie buff, gamer, and beer geek. as a nature lover, i do my best to reduce my carbon footprint by adhering to a minimalistic, plant-based lifestyle.</p>
+          <!-- changed to col-12 after commenting out photo. change top margin from 15% to 3% in css -->
+          <div class="col-12">
+            <p id="amb">hey, i'm jase, a full-stack software engineer currently attending epicodus coding bootcamp. i'm an avid nba and formula 1 fan, movie buff, gamer, and beer geek. as a nature lover, i do my best to reduce my carbon footprint by adhering to a minimalistic, plant-based lifestyle.</p>
           </div>
         </div>
       </div>
+      <!-- removed from about me: i live in the woodstock neighborhood of portland, or with my lovely partner, katie. -->
 
       <h1 id="projects">PROJECTS</h1><br>
       <div id="projectsBody" class="container">
@@ -70,10 +72,11 @@
               </div>
 
               <div class="projectCard card">
-                <h3 class="jsp"><a link href="https://github.com/jcseeley/currency-exchanger"><em>currency exchanger</em></a></h3>
+                <h3 class="jsp"><a link href="https://jcseeley.github.io/currency-exchanger/"><em>currency exchanger</em></a></h3>
                 <img class="project img-fluid" src="img/currencyExchanger.png" alt="screenshot of Currency Exchanger app">
                 <p>currency exchange app utilizing an api to convert usd into 161 different currencies</p>
                 <p class="tech">tech used: javascript, jquery, webpack, html, css and bootstrap</p>
+                <a link href="https://github.com/jcseeley/currency-exchanger">github</a>
               </div>
             
             </div>
@@ -84,8 +87,10 @@
             <div class="projectCard card">
               <h3 class="cp"><a link href="https://github.com/jcseeley/Pierres.Solution"><em>pierre's bakery</em></a></h3>
               <img class="project img-fluid" src="img/pierre.png" alt="screenshot of Pierre's Bakery">
-              <p>mvc app utilizing a sql database and user authentication to create many-to-many relationships between pastries and flavors</p>
-              <p class="tech">tech used: C#, . net core, entity, identity, sql, razor, cshtml, css and bootstrap</p>
+              <p>mvc application with restful routing, user
+                authentication, code-first database, and full
+                crud functionality for authorized users.</p>
+              <p class="tech">tech used: C#, asp. net core, identity, entity, mysql, razor, cshtml, css and bootstrap</p>
             </div>
             
             <div class="projectCard card">
@@ -98,14 +103,16 @@
             <div class="projectCard card">
               <h3 class="cp"><a link href="https://github.com/jcseeley/AnimalShelter.Solution"><em>animal shelter api</em></a></h3>
               <img class="project img-fluid" src="img/AnimalShelter.png" alt="screenshot of Animal Shelter API swagger documentation">
-              <p>api utilizing restful routing, swagger documentation and pagination</p>
-              <p class="tech">tech used: C#, . net core, entity, sql, openapi, swagger and swashbuckle</p>
+              <p>mvc restful web api with a code-first
+                database, full crud functionality, swagger
+                documentation, and paginated results.</p>
+              <p class="tech">tech used: C#, asp. net core, entity, mysql, and swashbuckle</p>
             </div>
 
             <div class="projectCard card">
               <h3 class="cp"><a link href="https://github.com/jcseeley/VendorOrderTracker.Solution"><em>vendor order tracker</em></a></h3>
               <img class="project img-fluid" src="img/Vendor.png" alt="screenshot MSTest code">
-              <p>a prequel to pierre's bakery focused on model testing with mstest</p>
+              <p>mvc application practicing tdd with mstest</p>
               <p class="tech">tech used: C#, . net core, mstest, razor, cshtml, css and bootstrap</p>
             </div>
 
@@ -116,8 +123,8 @@
       <h1 id="bg">background</h1><br>
       <p id="bgb">i was born and raised in concord, nh. while there, i spent 8 years working for the grappone automotive group. starting in the detail center, i quickly worked my way up to become a key member of the used inventory team. i attended manchester community college's automotive technology program for 3 semesters before realizing i preferred it more as a hobby than as a career. after tiring of the auto industry and my home state, i knew it was time for a change. at the beginning of 2019, i packed my car and headed for the west coast. upon landing in oregon, i pursued a job in the bustling portland beer industry. i quickly found work as a draft technician at northwest draft. during my time there, i attended the micro-matic dispense institute in ca where i learned how to install a variety of different draft systems. after being laid off due to the ongoing covid-19 pandemic, i took advantage of the gig work wave before making the decision to enroll at epicodus.</p>
 
-      <h1 id="wc">WHY CODING?</h1><br>
-      <p id="wcb">having grown up in the late 90's, my home computer was constantly riddled with issues. sometimes it felt like i spent more time trying to access the internet than surfing it. that said, puzzles and problem solving have always been a source of satisfaction for me, so it wasn't long before i actually started to enjoy chasing down fixes. as for coding, my limited intro was styling my myspace page and modifying the downloadable maps for halo 2. i removed invisible barriers, altered spawn points, gave myself superjump capabilities, absurd auto aim, and unlimited ammunition. it was fun but i never really considered it as a career. in 2006, my working life began and i fell into the auto industry for 10 years. while i enjoyed some aspects of dealership life, i knew i wasn't long for it. once i got out, i moved to portland to pursue another passion of mine, beer. after a year in the industry, covid-19 took over and i was laid off. while sitting at home on unemployment, coding began crossing my mind a lot. my initial research had me thinking i needed a cs degree and that it wasn't really an option. regardless, i had firmly decided that i wasn't returning to the beer biz. when i got the call, i declined. then, while riding the gig work wave, i began to see a lot of ads for coding bootcamps popping up. after some extensive research, i decided to go for it and enrolled at epicodus at the beginning of 2022. so far, i love it. the potential to build applications that could improve people's lives is what keeps me banging away on my keyboard every day.</p>
+      <!-- <h1 id="wc">WHY CODING?</h1><br>
+      <p id="wcb">having grown up in the late 90's, my home computer was constantly riddled with issues. sometimes it felt like i spent more time trying to access the internet than surfing it. that said, puzzles and problem solving have always been a source of satisfaction for me, so it wasn't long before i actually started to enjoy chasing down fixes. as for coding, my limited intro was styling my myspace page and modifying the downloadable maps for halo 2. i removed invisible barriers, altered spawn points, gave myself superjump capabilities, absurd auto aim, and unlimited ammunition. it was fun but i never really considered it as a career. in 2006, my working life began and i fell into the auto industry for 10 years. while i enjoyed some aspects of dealership life, i knew i wasn't long for it. once i got out, i moved to portland to pursue another passion of mine, beer. after a year in the industry, covid-19 took over and i was laid off. while sitting at home on unemployment, coding began crossing my mind a lot. my initial research had me thinking i needed a cs degree and that it wasn't really an option. regardless, i had firmly decided that i wasn't returning to the beer biz. when i got the call, i declined. then, while riding the gig work wave, i began to see a lot of ads for coding bootcamps popping up. after some extensive research, i decided to go for it and enrolled at epicodus at the beginning of 2022. so far, i love it. the potential to build applications that could improve people's lives is what keeps me banging away on my keyboard every day.</p> -->
 
       <h1 id="hobbies">hobbies</h1>
       <div id="hobbyContent" class="container">

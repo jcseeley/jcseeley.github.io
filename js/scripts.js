@@ -1,18 +1,31 @@
 $(document).ready(function() {
   $("#am").click(function() {
     $("#amb").slideToggle();
-    $("#me").slideToggle();
+    $("#bgb").slideUp();
+    $("#projectsBody").slideUp();
+    $("#hobbyContent").slideUp();
+    // $("#me").slideToggle();
   });
   $("#bg").click(function() {
     $("#bgb").slideToggle();
+    $("#amb").slideUp();
+    $("#projectsBody").slideUp();
+    $("#hobbyContent").slideUp();
   });
-  $("#wc").click(function() {
-    $("#wcb").slideToggle();
-  });
+  // $("#wc").click(function() {
+  //   $("#wcb").slideToggle();
+  // });
   $("#projects").click(function() {
     $("#projectsBody").slideToggle();
+    $("#amb").slideUp();
+    $("#bgb").slideUp();
+    $("#hobbyContent").slideUp();
+
   });
   $("#hobbies").click(function() {
-    $("#hobbyContent").slideToggle();
+    $("#hobbyContent").fadeToggle();
+    $("#amb").slideUp();
+    $("#bgb").slideUp();
+    $("#projectsBody").slideUp();
   });
 });
